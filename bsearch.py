@@ -7,3 +7,6 @@ def binary_search(arr,low,high,key):
             return binary_search(arr,mid+1,high,key)
         else:
              return binary_search(arr,low,mid-1,key)
+    else:
+        return -1
+print(binary_search([0,1,2,3,4,5],low=0,high=5,key=7))
